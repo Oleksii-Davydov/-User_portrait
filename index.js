@@ -6,10 +6,9 @@ let result_1 = yearOfBirth
 if (yearOfBirth) {
     alert (2022 - (+yearOfBirth))
 }
-else if (yearOfBirth===null || yearOfBirth===false ){
+else {
     alert('It is a pity that you did not want to enter your year of birth')
 }
-
 let result_2 = city
 if (city === 'Kyiv') {
     alert("You live in the capital of Ukraine")
