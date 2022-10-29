@@ -1,35 +1,52 @@
+
 const yearOfBirth = prompt("Enter your year of birth");
+
 if (yearOfBirth === null) {
     alert("It is a pity that you did not want to enter your year of birth.");
-} else {
+}
+else {
     const city = prompt("What city do you live in?");
+
     if (city === null) {
         alert("It is a pity that you did not want to enter the city in which you live:((");
-    } else {
+    }
+    else {
         const sport = prompt("What is your favorite kind of sport");
+
+
         if (sport === null) {
             alert("It's a pity that you didn't want to enter your favorite sport.");
-        } else {
+        }
+        else {
+            let result1 = yearOfBirth
             if (yearOfBirth) {
-                result_1 = "You are " + (2022 - parseInt(yearOfBirth)) + "old.";
+                result1 = `You are ${2022 - parseInt(yearOfBirth)} old.`;
             }
+
+            let result2 = city
             if (city === 'Kyiv') {
-                result_2 = "You live in the capital of Ukraine.";
-            } else if (city === 'London') {
-                result_2 = "You live in the capital of Great Britain.";
-            } else if (city === 'Washington') {
-                result_2 = "You live in the capital of Great USA.";
+                result2 = "You live in the capital of Ukraine.";
+            } else
+            if (city === 'London') {
+                result2 = "You live in the capital of Great Britain.";
+            } else
+            if (city === 'Washington') {
+                result2 = "You live in the capital of Great USA.";
+
             } else if (city) {
-                result_2 = "You live in the city of " + city;
+                result2 = `You live in the city of ${city}`;
             }
+
+            let result3 = sport
             if (sport === 'football') {
-                result_3 = "Cool! Do you want to be Messi?";
+                result3 = "Cool! Do you want to be Messi?";
             } else if (sport === 'box') {
-                result_3 = "Cool! Do you want to be Tyson?";
+                result3 = "Cool! Do you want to be Tyson?";
             } else if (sport === 'tennis') {
-                result_3 = "Cool! Do you want to be Nadal?";
+                result3 = "Cool! Do you want to be Nadal?";
             }
-            const result = (result_1 + "\n" + result_2 + "\n" + result_3)
+
+            const result = `${result1}  \n ${result2} \n ${result3}`;
             alert(result)
         }
     }
